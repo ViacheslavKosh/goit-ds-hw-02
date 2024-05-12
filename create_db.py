@@ -3,7 +3,7 @@ import sqlite3
 def create_db():
     try:
     # читаємо файл зі скриптом для створення БД
-        with open('users.sql', 'r') as f:
+        with open('users.sql', 'r', encoding='utf-8') as f:
             sql = f.read()
         
     # створюємо з'єднання з БД (якщо файлу з БД немає, він буде створений)

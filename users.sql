@@ -7,14 +7,14 @@ CREATE TABLE users (
 );
 
 --Таблиця статусів завдань
-DROP TABLE IF EXIST status;
+DROP TABLE IF EXISTS status;
 CREATE TABLE status (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name VARCHAR(50) UNIQUE NOT NULL
 );
 
 --Таблиця завдань
-DROP TABLE IF EXIST tasks;
+DROP TABLE IF EXISTS tasks;
 CREATE TABLE tasks (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     title VARCHAR(100) NOT NULL,

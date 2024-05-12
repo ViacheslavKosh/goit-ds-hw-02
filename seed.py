@@ -6,7 +6,7 @@ def seed_database():
 
     # Заповнюємо таблицю користувачів
     users_data = [(fake.name(), fake.email()) for _ in range(10)]
-
+    
     # Заповнюємо таблицю статусів
     statuses_data = [('new',), ('in progress',), ('completed',)]
 
